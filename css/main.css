@@ -9,6 +9,14 @@
   padding-bottom: 15px;
 }
 
+.page-header-icon-wrapper {
+  transition: 0.9s;
+}
+
+.page-header-icon-wrapper:hover {
+  transform: rotateY(180deg);
+}
+
 .center {
   text-align: center;
 }
@@ -17,16 +25,32 @@
   background-color: #fac711;
 }
 
+.yellow-text {
+  color: #fac711 !important;
+}
+
 .red {
   background-color: #f24827;
+}
+
+.red-text {
+  color: #f24827 !important;
 }
 
 .blue {
   background-color: #2d9bf0;
 }
 
+.blue-text {
+  color: #2d9bf0 !important;
+}
+
 .green {
   background-color: #8fd24f;
+}
+
+.green-text {
+  color: #8fd24f !important;
 }
 
 .row.header {
@@ -51,12 +75,21 @@
   align-items: center;
 }
 
+.project-card-action {
+  font-weight: 500;
+}
+
 .main {
   font-family: "Ubuntu", sans-serif;
   background-color: #212529;
 }
 
-p {
+.content {
   color: white;
   font-weight: 300;
+}
+
+.icon-link:hover {
+  color: white !important;
+  cursor: pointer;
 }
