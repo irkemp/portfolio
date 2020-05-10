@@ -45,12 +45,20 @@
   color: #2d9bf0 !important;
 }
 
+.grey-text {
+  color: #212529;
+}
+
 .green {
   background-color: #8fd24f;
 }
 
 .green-text {
   color: #8fd24f !important;
+}
+
+.bold-text {
+  font-weight: 500;
 }
 
 .row.header {
