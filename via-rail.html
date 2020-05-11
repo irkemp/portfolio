@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/6eb4b6e284.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/main.css"></link>
+        <link rel="stylesheet" href="css/main.css"></link>
     </head>
     <body class="main">
         <nav class="navbar fixed-top navbar-light bg-light page-header">
@@ -16,68 +16,97 @@
         <div class="container-fluid content" style="margin-top: 150px;">
             <div class="row justify-content-center">
                 <div class="col-11 col-md-6">
-                    <a href="https://www.codegem.ca" target="blank">
-                        <img src="../images/via-rail.png" height=50px class="mb-5"></img>
-                    </a>
+                    <img src="images/via-rail.png" height=50px class="mb-5"></img>
                     <div class="mb-5 pb-3" style="border-bottom: 1px solid grey;">
                         <div class="mb-4">
                             <h6>What it is</h6>
-                                A platform that 
-                                <span class="red-text bold-text">strengthens engineering culture</span>
-                                by providing the analytics necessary to turn 
-                                <span class="blue-text bold-text">insight into improvement</span>.
+                                An onboard Wi-Fi landing page that
+                                <span class="red-text bold-text">manages customer expectations</span>
+                                by presenting relevant 
+                                <span class="blue-text bold-text">information in realtime</span>.
                             </span>
                         </div>
                         <div class="mb-4">
-                            <h6>What I do</h6>
+                            <h6>What I did</h6>
                             <span>
-                                <span class="green-text bold-text">Product Manager</span>
+                                <span class="green-text bold-text">UI / UX Designer</span>
                                  + 
-                                 <span class="yellow-text bold-text">UI / UX Designer</span>
+                                 <span class="yellow-text bold-text">Frontend Engineer</span>
                                   + 
-                                  <span class="red-text bold-text">Frontend Engineer</span>
-                                  for our team of 8.
+                                  <span class="red-text bold-text">Data Scientist</span>
+                                  in collaboration with other business units.
                             </span>
                         </div>
                         <div class="mb-4">
-                            <h6>What I use</h6>
+                            <h6>What I used</h6>
                             <span>
-                                <span class="blue-text bold-text">React</span>
+                                <span class="blue-text bold-text">Bootstrap</span>
                                  + 
-                                <span class="green-text bold-text">Redux</span>
-                                 dashboard and Chrome extension with 
-                                <span class="yellow-text bold-text">GraphQL</span>.
+                                <span class="green-text bold-text">Mapbox</span>
+                                 light-weight landing page with
+                                <span class="yellow-text bold-text">custom machine learning</span>.
                             </span>
                         </div>
                     </div>
                     <div class="mb-5">
-                        <h4 class="mb-3">Engineering culture, one pull request at a time</h4>
+                        <h4 class="mb-3">Soothing passengers using realtime data</h4>
                         <p>
-                            When my friends and I founded CodeGem two years ago, we wanted to
-                            build a framework to help engineers give and recieve better feedback.
+                            VIA Rail has two big problems it can't control. Their passenger trains
+                            have to give the right of way to freight trains, and the cellular network
+                            their onboard Wi-Fi system connects to is limited.
                         </p>
                         <p>
-                            After interviewing engineers and managers at Shopify and Loblaw Digital,
-                            we quickly learned that there was a huge amount of missing data about how
-                            engineering teams actually work together.
+                            The math isn't difficult:
                         </p>
+                        <code>
+                            Delays + Unreliable Wi-Fi = Unhappy Customers
+                        </code>
+                        <p>
+                            I started by talking to passengers in stations and on trains, both as an official
+                            representative of VIA and undercover. We learned that passengers were frustrated
+                            by the delays and Wi-Fi, but they were angry about not knowing why and for how long.
+                        </p>
+                        <p>As a passenger, these questions often generate anxiety:</p>
+                        <ul>
+                            <li>Where am I currently?</li>
+                            <li>When will I get to my destination?</li>
+                            <li>Why isn't my Instagram loading?</li>
+                            <li>Does the Wi-Fi work at all?</li>
+                            <li>Will my call get dropped?</li>
+                        </ul>
                     </div>
                     <div class="mb-5">
-                        <div style="font-size: 1.2rem;" class="mb-3">Understanding <span class="red-text bold-text">content</span> and <span class="blue-text bold-text">context</span> of engineering communication</div>
+                        <div style="font-size: 1.2rem;" class="mb-3">How do you <span class="green-text bold-text">create control</span> that doesn't exist?</div>
                         <p>
-                            A lot can be learned by listening. Using natural language processing, we
-                            can piece together how developers collaborate, tie communication to output,
-                            and present the big picture. 
+                            VIA Rail had already developed a simple HTML webpage that used realtime train data to
+                            display the a given train's schedule and location in realtime. Unusually, the tool
+                            wasn't advertised to passengers at all and was considered one of VIA's "best kept secrets".
                         </p>
                         <figure class="figure">
-                            <img src="../images/codegem-comments.png" class="figure-img img-fluid rounded" alt="...">
-                            <figcaption class="figure-caption text-right">Metadata about pull request comments is captured and shown automatically</figcaption>
+                            <img src="images/via-interface-before.png" class="figure-img img-fluid rounded" alt="...">
+                            <figcaption class="figure-caption text-right">The schedule table and map component of the original application</figcaption>
                         </figure>
                         <p>
-                            Since engineers don't like extra steps, CodeGem injects HTML straight into GitHub so 
-                            that they can interact with helpful features without extra clicks.
+                            The application was an excellent foundation, but it needed some work. The map looks nice,
+                            but it feels like I'm floating in the void. Where are the stations? Where did I start? Where am I going?
+                        </p>
+                        <p>
+                            As I prototyped the new app, I frequently boarded train to get passenger opinions, allowing for
+                            uniquely continuous design validation.
+                        </p>
+                        <figure class="figure">
+                            <img src="images/via-interface-after.png" class="figure-img img-fluid rounded" alt="...">
+                            <figcaption class="figure-caption text-right">The enhanced application shows the train route, stations and Wi-Fi status in realtime</figcaption>
+                        </figure>
+                        <p>
+                            The enhancement required aggregating millions of raw Wi-Fi diagnostic data points into GeoJSON fragments.
+                             Using Python, the GeoJSON data could then be divided into segments based on average expected Wi-Fi speed.
+                             With improved location context using the map, and information about the current Wi-Fi status, the application was ready
+                             to become the new official Wi-Fi landing page.
                         </p>
                     </div>
+                    <div style="font-size: 1.2rem;" class="mb-5">If you thought this was cool, you just check out my favourite project: <a href="codegem.html">CodeGem</a>.</div>
+
                 </div>
             </div>
         </div>
