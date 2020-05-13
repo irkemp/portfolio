@@ -11,7 +11,9 @@
     </head>
     <body class="main">
         <nav class="navbar fixed-top navbar-light bg-light page-header">
-            <i onclick="window.history.back();" class="fas fa-chevron-left fa-2x"></i>
+            <a href="index.html" class="grey-text back-button">
+                <i class="fas fa-chevron-left fa-2x"></i>
+            </a>
         </nav>
         <div class="container-fluid content" style="margin-top: 150px;">
             <div class="row justify-content-center">
@@ -23,7 +25,7 @@
                                 An onboard train Wi-Fi landing page that
                                 <span class="red-text bold-text">manages customer expectations</span>
                                 by presenting relevant 
-                                <span class="blue-text bold-text">data in realtime</span>.
+                                <span class="blue-text bold-text">data in real-time.</span>
                             </span>
                         </div>
                         <div class="mb-4">
@@ -43,14 +45,14 @@
                                 <span class="blue-text bold-text">Bootstrap</span>
                                  + 
                                 <span class="green-text bold-text">Mapbox</span>
-                                 light-weight landing page with
+                                 lightweight landing page with
                                 <span class="yellow-text bold-text">custom machine learning</span>
                                  using Python.
                             </span>
                         </div>
                     </div>
                     <div class="mb-5">
-                        <h4 class="mb-3">Soothing passengers using realtime data</h4>
+                        <h4 class="mb-3">Soothing passengers using real-time data</h4>
                         <p>
                             VIA Rail has two big problems it can't control. Their passenger trains
                             have to give the right of way to freight trains, and the cellular network
@@ -62,8 +64,8 @@
                         <code>
                             Delays + Unreliable Wi-Fi = Unhappy Customers
                         </code>
-                        <p>
-                            I started by talking to passengers in stations and on trains, both as an official
+                        <p class="mt-3">
+                            I started by intervewing passengers in stations and on trains, both as an official
                             representative of VIA and undercover. We learned that passengers were frustrated
                             by the delays and Wi-Fi, but they were angry about not knowing why and for how long.
                         </p>
@@ -71,17 +73,17 @@
                         <ul>
                             <li>Where am I currently?</li>
                             <li>When will I get to my destination?</li>
-                            <li>Why isn't my Instagram loading?</li>
                             <li>Does the Wi-Fi work at all?</li>
                             <li>Will my call get dropped?</li>
+                            <li>Why isn't my Instagram loading?</li>
                         </ul>
                         <p>The other problem the business faced? VIA Rail needed a solution that didn't cost $200,000.</p>
                     </div>
                     <div class="mb-5">
                         <div style="font-size: 1.2rem;" class="mb-3">How do you <span class="green-text bold-text">create control</span> that doesn't exist?</div>
                         <p>
-                            VIA Rail had already developed a simple HTML webpage that used realtime train data to
-                            display the a given train's schedule and location in realtime. Unusually, the tool
+                            VIA Rail had already developed a simple HTML webpage that used real-time train data to
+                            display a given train's schedule and location. Unusually, the tool
                             wasn't advertised to passengers at all and was considered one of VIA's "best kept secrets".
                         </p>
                         <figure class="figure">
@@ -89,7 +91,7 @@
                             <figcaption class="figure-caption text-right">The schedule table and map component of the original application</figcaption>
                         </figure>
                         <p>
-                            The application was an excellent foundation, but it needed some work. The map looks nice,
+                            The application was an excellent foundation, but it had the potential to improve. The map looks nice,
                             but it feels like I'm floating in the void. Where are the stations? Where did I start? Where am I going?
                         </p>
                         <p>
@@ -98,7 +100,7 @@
                         </p>
                         <figure class="figure">
                             <img src="images/via-interface-after.png" class="figure-img img-fluid rounded" alt="...">
-                            <figcaption class="figure-caption text-right">The enhanced application shows the train route, stations and Wi-Fi status in realtime</figcaption>
+                            <figcaption class="figure-caption text-right">The prototype shows the train route, stations and Wi-Fi status in real-time</figcaption>
                         </figure>
                         <p>
                             The enhancement required aggregating millions of raw Wi-Fi diagnostic data points into GeoJSON fragments.

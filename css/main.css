@@ -49,6 +49,10 @@
   color: #212529;
 }
 
+.back-button:hover {
+  color: #212529;
+}
+
 .green {
   background-color: #8fd24f;
 }
